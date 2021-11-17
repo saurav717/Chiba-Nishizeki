@@ -32,5 +32,5 @@ The code will run twice, first time to check the duration of execution and the s
 ## To find triangle packing for a data 
 
 #### An example for grqc dataset
-''' python3.9 cs599.py grqc.txt triangle_packing '''
+``` python3.9 cs599.py grqc.txt triangle_packing ```
 
