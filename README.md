@@ -78,9 +78,9 @@ insert text here
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
 
 1) **Chiba Nishizeki** 
-    - For more information about this algorithm, please refer to this paper : http://www.ecei.tohoku.ac.jp/alg/nishizeki/sub/j/DVD/PDF_J/J053.pdf
+    - For more information about this algorithm, please refer to this paper : [Link](http://www.ecei.tohoku.ac.jp/alg/nishizeki/sub/j/DVD/PDF_J/J053.pdf)
 2) **Leapfrog trijoin** 
-    - For more information about this algorithm, please refer to this paper : https://arxiv.org/abs/1210.0481 
+    - For more information about this algorithm, please refer to this paper : [Link](https://arxiv.org/abs/1210.0481) 
 
 - For grqc dataset
 ``` python3.9 cs599.py grqc.txt find_triangles ```
