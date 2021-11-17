@@ -32,5 +32,30 @@ The code will run twice, first time to check the duration of execution and the s
 ## To find triangle packing for a data 
 
 #### An example for grqc dataset
+- To test of grqc dataset
 ``` python3.9 cs599.py grqc.txt triangle_packing ```
+
+- To test on github social
+``` python3.9 cs599.py musae_git_edges.csv triangle_packing```
+
+- To test on web berkstan dataset
+```python3.9 cs599.py web-BerkStan.txt triangle_packing```
+
+## To find Triangles in a given dataset
+
+After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
+
+1) Chiba Nishizeki 
+2) Leapfrog trijoin 
+
+- To test of grqc dataset
+``` python3.9 cs599.py grqc.txt find_triangles ```
+
+- To test on github social
+``` python3.9 cs599.py musae_git_edges.csv find_triangles```
+
+- To test on web berkstan dataset
+```python3.9 cs599.py web-BerkStan.txt find_triangles```
+
+
 
