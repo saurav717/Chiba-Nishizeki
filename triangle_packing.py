@@ -2,8 +2,10 @@ import numpy as np
 import networkx as nx
 import pandas as pd 
 import matplotlib.pyplot as plt
+import getopt, sys
+import random
 
-
+# print("this worked too")
 graph_data = pd.read_csv("data.txt", delimiter = "\t")
 
 
@@ -15,7 +17,6 @@ print()
 print(graph_data.head())
 
 
-
 class triangle_packing:
 
     def __init__(self, data):
@@ -24,11 +25,14 @@ class triangle_packing:
 
         self.num_colors = data["K"]
         self.colors = list(range(self.num_colors))
+        random.shuffle(self.colors)
         self.shuffle = data["shuffle"]
 
         self.node_colors = None
         self.one_colored_edgelist = None
-        self.packing_init()
+        self.tpacking = False
+        self.init() 
+        # self.packing_init()
 
     def degree_sorted_nodes(self, dictionary): # sorts the nodes in decreasing order of their degrees
         return {k: v for k, v in sorted(dictionary.items(), key=lambda item: item[1], reverse = True)}
@@ -116,7 +120,7 @@ class triangle_packing:
     def packing_init(self):
         # color_list = self.colors
         self.color_nodes()
-
+        
         for color in self.colors:
             # print(color)
             current_colorlist = []
@@ -132,18 +136,26 @@ class triangle_packing:
             # print("this working?")
             if(self.packing(current_colorlist, self.edge_list)=="yes"):
                 print("packing found")
+                self.tpacking = True
                 break
 
             else:
                 print("no packing found")
                 break
+    
+    def init(self):
+        # print(self.num_colors)
+        for i in range(int(np.exp(self.num_colors))):
+            self.packing_init() 
+            if(self.tpacking == True):
+                break 
 
 # %%time
-data = {
-    "edge_list" : graph_data,
-    "K" : 15, 
-    "shuffle" : True,
-}
+# data = {
+#     "edge_list" : graph_data,
+#     "K" : 15, 
+#     "shuffle" : True,
+# }
 
-packing = triangle_packing(data)
-# packing.packing_init()
+# packing = triangle_packing(data)
+# # packing.packing_init()
