@@ -68,6 +68,11 @@ The code will run twice, first time to check the duration of execution and the s
 
 ## To find Triangles in a given dataset
 
+
+insert text here
+
+## Algorithm output with k = 5, 10, 15, 20
+
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
 
 1) **Chiba Nishizeki** 
