@@ -29,6 +29,8 @@ You will be able to see how long the algorithm took to execute and the memory it
 The code will run twice, first time to check the duration of execution and the second time to check how much memory the code is occupying during the execution of the code 
 
 
-made some changes 
+## To find triangle packing for a data 
 
+#### An example for grqc dataset
+{ python3.9 cs599.py grqc.txt triangle_packing  }
 
