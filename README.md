@@ -31,7 +31,7 @@ The code will run twice, first time to check the duration of execution and the s
 
 ## To find triangle packing for a data 
 
-#### An example for grqc dataset
+#### Try Executing the following codes mentioned
 - For grqc dataset
 ``` python3.9 cs599.py grqc.txt triangle_packing ```
 
@@ -45,8 +45,8 @@ The code will run twice, first time to check the duration of execution and the s
 
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
 
-1) Chiba Nishizeki 
-2) Leapfrog trijoin 
+1) **Chiba Nishizeki** 
+2) **Leapfrog trijoin** 
 
 - For grqc dataset
 ``` python3.9 cs599.py grqc.txt find_triangles ```
