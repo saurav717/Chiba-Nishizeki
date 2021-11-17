@@ -58,12 +58,12 @@ The code will run twice, first time to check the duration of execution and the s
 
 #### Proof that the implemented algorithm is NP-complete <insert link here>
 
-|   K	|   output	| Runtime  	| Memory usage  	|   
-|---	|---	    |---	    |---	            |
-|   5	|   	    |   	    |                	|
-|   10	|   	    |        	|                	|
-|   15	|   	    |        	|                	|
-|   20	|   	    |       	|                	|
+|   K	|   output	            | Runtime  	| Memory usage  	|   
+|---	|---	                |---	    |---	            |
+|   5	|   Packing found	    |   	    |                	|
+|   10	|   Packing found	    |        	|                	|
+|   15	|   Packing found	    |        	|                	|
+|   20	|   Packing found	    |       	|                	|
 
 
 ## To find Triangles in a given dataset
