@@ -56,7 +56,7 @@ The code will run twice, first time to check the duration of execution and the s
 
  since the time complexity of our algorithm is equivalent to that of a fixed point tractable algorithm as it should be  
 
-#### Proof that the implemented algorithm is NP-complete <insert link here>
+#### Proof that the implemented algorithm is NP-complete [insert link here]
 
 |   K	|   output	            | Runtime  	| Memory usage  	|   
 |---	|---	                |---	    |---	            |
