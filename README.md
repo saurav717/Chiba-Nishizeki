@@ -1,16 +1,14 @@
 
 ## **CS599 Graph Analytics** by  **Dr. Charalampos Tsourkakis** at Boston University 
 
-To run the codes: 
-
-*  Clone the repository 
+Clone the repository and follow the below given instructions to run the codes
 
 
-python3.9 cs599.py <dataset.txt> <operation>
+```python3.9 cs599.py <dataset.txt> <operation>```
 
 We basically do two operations 
-    - Find_triangles
-    - triangle_packing
+- Find_triangles
+- triangle_packing
 
 Then you will come across this text 
 
