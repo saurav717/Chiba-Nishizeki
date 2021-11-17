@@ -74,6 +74,7 @@ insert text here
 |   20	|   Packing found	    |       	|                	|
 
 
+## Problem 3: Implementation of Triangle finding algorithms
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
 
 1) **Chiba Nishizeki** 
