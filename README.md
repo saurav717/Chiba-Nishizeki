@@ -60,7 +60,7 @@ The code will run twice, first time to check the duration of execution and the s
 
 insert text here
 
-## Algorithm output with k = 5, 10, 15, 20
+#### Algorithm output with k = 5, 10, 15, 20
 
 
 |   K	|   output	            | Runtime  	| Memory usage  	|   
