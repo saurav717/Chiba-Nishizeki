@@ -46,7 +46,7 @@ The code will run twice, first time to check the duration of execution and the s
 
  It is a **Fixed parameter tractable problem** with 'K' as the parameter. K stands for the number of colors with which we are randomly coloring the graph. 
 
- ## Problem 2.1: Proof that the implemented algorithm is NP-complete [insert link here]
+ ### Problem 2.1: Proof that the implemented algorithm is NP-complete [insert link here]
 
 insert text here
 
