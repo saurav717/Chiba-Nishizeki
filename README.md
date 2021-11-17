@@ -47,7 +47,7 @@ The code will run twice, first time to check the duration of execution and the s
  It is a **Fixed parameter tractable problem** with 'K' as the parameter. K stands for the number of colors with which we are randomly coloring the graph. 
 
  ### Time Complexity
- $ a_{11} $
+ Euler's formula is remarkable: $e^{i\pi} + 1 = 0$.
 
 
 ## To find Triangles in a given dataset
