@@ -89,4 +89,22 @@ After you execute one of the below commands in terminal, you will be prompted to
 ```python3.9 cs599.py web-BerkStan.txt find_triangles```
 
 
+### Time comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
+
+|   	| Chiba Nishizeki  	|  Leapfrog Trijoin  	|   	|   	|
+|---	|---	|---	|---	|---	|
+| grqc dataset  	|   	|   	|   	|   	|
+| github social dataset  	|   	|   	|   	|   	|
+| web berkstan dataset  	|   	|   	|   	|   	|
+
+### Memory comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
+
+|   	|   	|   	|   	|   	|
+|---	|---	|---	|---	|---	|
+|   	|   	|   	|   	|   	|
+|   	|   	|   	|   	|   	|
+|   	|   	|   	|   	|   	|
+
+
+
 
