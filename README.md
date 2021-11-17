@@ -1,5 +1,5 @@
 
-Hello! This is a repository for the assignment for course *CS599 Graph Analytics* by  *Dr. Charalampos Tsourkakis* at Boston University 
+Hello! This is a repository for the assignment for course **CS599 Graph Analytics** by  **Dr. Charalampos Tsourkakis** at Boston University 
 
 To run the codes: 
 
