@@ -42,6 +42,14 @@ The code will run twice, first time to check the duration of execution and the s
 - For web berkstan dataset
 ```python3.9 cs599.py web-BerkStan.txt triangle_packing```
 
+#### About Implemented Algorithm 
+
+ It is a **Fixed parameter tractable problem** with 'k' as the parameter. K stands for the number of colors with which we are randomly coloring the graph. 
+
+ #### Time Complexity
+ \exp(\div(2,3))
+
+
 ## To find Triangles in a given dataset
 
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
