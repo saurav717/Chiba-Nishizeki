@@ -47,10 +47,14 @@ The code will run twice, first time to check the duration of execution and the s
  It is a **Fixed parameter tractable problem** with 'K' as the parameter. K stands for the number of colors with which we are randomly coloring the graph. 
 
  ### Time Complexity
- Euler's formula is remarkable: 
  
- $\alpha$
+ Number of total combinations of colors we search for finding a triangle in each color = 2^(k)
 
+ at each one colored nodes, we use chiba nishizeki algorithm to find the triangles. Worst case time complexity to find the triangles = O(n^3)
+
+ Total time complexity = O(2^k n^3) ≈ O(2^k n^O(1))
+
+ since the time complexity of our algorithm is equivalent to that of a fixed point tractable algorithm as it should be  
 
 ## To find Triangles in a given dataset
 
