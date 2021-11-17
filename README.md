@@ -46,7 +46,11 @@ The code will run twice, first time to check the duration of execution and the s
 
  It is a **Fixed parameter tractable problem** with 'K' as the parameter. K stands for the number of colors with which we are randomly coloring the graph. 
 
- ### Time Complexity
+ #### Problem 2.2: Proof that the implemented algorithm is NP-complete [insert link here]
+
+insert text here
+
+ ### Problem2.2 Time Complexity
  
  Number of total combinations of colors we search for finding a triangle in each color = 2^(k)
 
@@ -56,10 +60,9 @@ The code will run twice, first time to check the duration of execution and the s
 
  since the time complexity of our algorithm is equivalent to that of a fixed point tractable algorithm as it should be  
 
-#### Proof that the implemented algorithm is NP-complete [insert link here]
 
-insert text here
 
+### Problem 2.3 Output for different values of 'k' for grqc graph
 #### Algorithm output with k = 5, 10, 15, 20
 
 
