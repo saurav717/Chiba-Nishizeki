@@ -9,22 +9,23 @@ An example format of command you need to run is like the one below
 ```python3.9 cs599.py <dataset.txt> <operation>```
 
 We basically do two operations 
-- Find_triangles
+- find_triangles
 - triangle_packing
 
-Then you will come across this text 
+Then you will come across this text when you select find_triangles
 
 Methods available 
 1) Chiba_nishizeki
 2) leapfrog trijoin
 
-Select the method index : 1/2
+Select the method index : 
 
-after selecting the index, the code will automatically run on the selected dataset and will display two images 
+Based on the index you select, one of the methods will be executed and you will see the output in the terminal 
 
-one is a flame graph which will open in a browser which is firefox by default. If you dont have firefox, please change the browser name in the code for now. This will be update in future 
+A **Flame Graph** will appear on firefox browser and **memory profile** will pop up after a while as a pop up
 
-You will be able to see how long the algorithm took to execute and the memory it occupied during the whole duration of its execution
+
+
 
 The code will run twice, first time to check the duration of execution and the second time to check how much memory the code is occupying during the execution of the code 
 
