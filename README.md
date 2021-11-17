@@ -1,5 +1,5 @@
 
-Hello! This is a repository for the assignment for course **CS599 Graph Analytics** by  **Dr. Charalampos Tsourkakis** at Boston University 
+## **CS599 Graph Analytics** by  **Dr. Charalampos Tsourkakis** at Boston University 
 
 To run the codes: 
 
@@ -32,5 +32,5 @@ The code will run twice, first time to check the duration of execution and the s
 ## To find triangle packing for a data 
 
 #### An example for grqc dataset
-{ python3.9 cs599.py grqc.txt triangle_packing  }
+''' python3.9 cs599.py grqc.txt triangle_packing '''
 
