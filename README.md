@@ -100,11 +100,11 @@ After you execute one of the below commands in terminal, you will be prompted to
 
 ### Memory comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
 
-|   	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	|   	|
-|---	|---	|---	|---	|---	|
-|  **grqc dataset**  	|   	|   	|   	|   	|
-|  **github social dataset** 	|   	|   	|   	|   	|
-|  **web berkstan dataset** 	|   	|   	|   	|   	|
+|   	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	
+|---	|---	|---	|
+|  **grqc dataset**  	|   	|   	|   	
+|  **github social dataset** 	|   	|   	|   	
+|  **web berkstan dataset** 	|   	|   	|   	
 
 
 
