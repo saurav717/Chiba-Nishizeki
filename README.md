@@ -77,7 +77,7 @@ python3.9 cs599.py web-BerkStan.txt triangle_packing
 
  L = exp(K) for finding the number of monochromatic triangles in a graph colored with K colors.
 
-[The probability of finding a colorful triangle](k-pack_probabilirt_triangle) is equal to exp(-K) to a given set of coloring of nodes.
+[The probability of finding a colorful triangle](k-pack_probabilirt_triangle) when the graph is colored with 3k colors is equal to exp(-K) to a given set of coloring of nodes.
 
 So we randomly color the nodes of the graph exp(K) times hoping to find a colorful triangle when colored with 3k colors
 
