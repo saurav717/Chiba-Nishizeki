@@ -5,7 +5,20 @@ import matplotlib.pyplot as plt
 import os,sys 
 
 args = sys.argv[1:]
-gqrc = pd.read_csv(sys.path[0]+"/../datasets/" + args[0], delimiter = "\t")
+# args = "musae_git_edges.csv"
+
+if(args[0][-3:] == "csv"):
+    gqrc = pd.read_csv(sys.path[0] + "/../datasets/"+args[0], delimiter = ",")
+if(args[0][-3:] == "txt"):
+    gqrc = pd.read_csv(sys.path[0] + "/../datasets/"+args[0], delimiter = "\t")
+# gqrc = pd.read_csv(sys.path[0]+"/../datasets/" + args[0], delimiter = "\t")
+
+columns = list(gqrc.columns)
+
+print("columns = ", columns)
+
+gqrc = gqrc.rename(columns = {columns[0] : "FromNodeId", columns[1]: "ToNodeId"})
+
 
 # information = {
 # "total nodes" : 5242,

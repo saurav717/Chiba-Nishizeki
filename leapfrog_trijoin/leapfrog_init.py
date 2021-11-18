@@ -12,8 +12,18 @@ import sys, os
 
 args = sys.argv[1:]
 
-data = pd.read_csv(sys.path[0]+"/../datasets/"+args[0], delimiter = "\t")
+# data = pd.read_csv(sys.path[0]+"/../datasets/"+args[0], delimiter = "\t")
+if(args[0][-3:] == "csv"):
+    data = pd.read_csv(sys.path[0] + "/../datasets/"+args[0], delimiter = ",")
+if(args[0][-3:] == "txt"):
+    data = pd.read_csv(sys.path[0] + "/../datasets/"+args[0], delimiter = "\t")
+
+columns = list(data.columns)
+
+data = data.rename(columns = {columns[0] : "FromNodeId", columns[1]: "ToNodeId"})
+
 data = data[data["FromNodeId"] != data["ToNodeId"]]
+
 relation1 = data.rename(columns = {"FromNodeId": "X", "ToNodeId": "Y"})
 relation2 = data.rename(columns = {"FromNodeId": "Y", "ToNodeId": "Z"})
 relation3 = data.rename(columns = {"FromNodeId": "X", "ToNodeId": "Z"})
@@ -52,10 +62,13 @@ n3 = tree3.open_()
 
 # print("intersection = ", lj.intersection)
 
-keys = list(np.unique(relation1["X"]))
-vals = np.zeros(len(np.unique(relation1["X"])))
-dictionary = dict(zip(keys, vals))
+# keys = list(np.unique(relation1["X"]))
+x = set(data["FromNodeId"])
+y = set(data["ToNodeId"])
 
+keys = list(x.union(y))
+vals = np.zeros(len(keys))
+dictionary = dict(zip(keys, vals))
 
 n1.peer_nodes = np.unique(list(relation1["X"].values))
 information = {

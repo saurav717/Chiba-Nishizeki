@@ -83,7 +83,7 @@ class lptj:
         # next_column = []
         while(nodes != None):
 
-            if(nodes[0].column == self.columns[0]):
+            if(depth == 0):
                 self.explored[nodes[0].value] = 1
 
             else:
@@ -95,10 +95,10 @@ class lptj:
                     break
 
 
-            if(nodes[0].column == self.columns[1]):
+            if(depth == 1):
                 ecolumn.append(nodes[0].value) 
 
-            if (nodes[0].column == self.columns[-1]):
+            if (depth == 2): # instead of checking column here, check depth
                 # if(set(tlist + [nodes[0].value]) not in self.ltriangles):
                 if(nodes[0].value not in ecolumn):
                     self.triangles+=1
