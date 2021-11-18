@@ -3,6 +3,7 @@ import networkx as nx
 import pandas as pd
 import matplotlib.pyplot as plt
 import os,sys 
+from tqdm import tqdm
 
 args = sys.argv[1:]
 # args = "musae_git_edges.csv"
@@ -48,12 +49,15 @@ def chiba_nishizeki(data):
     edge_list = graph_data
     nodes = np.unique(graph_data["FromNodeId"])
     node_degree = dict()
-    for x in nodes:
+
+    for x in tqdm(nodes, desc = "finding degree of nodes for sorting"):
         node_degree[x] = graph_data[graph_data["FromNodeId"] == x].shape[0]
     nodes = degree_sorted_nodes(node_degree)
+    print("complete")
     nodeIDs = list(nodes.keys())
     triangles = []
-    for i in range(len(nodeIDs)-2):
+    for i in tqdm(range(len(nodeIDs)-2), desc = "running"):
+        # print(i)
         node = nodeIDs[i]
         node_neighbours = np.unique(list(edge_list[edge_list["FromNodeId"] == node]["ToNodeId"]))
         marked_nodes = list(node_neighbours)
@@ -66,7 +70,7 @@ def chiba_nishizeki(data):
         edge_list = edge_list[edge_list["FromNodeId"]!=node]
         edge_list = edge_list[edge_list["ToNodeId"]!=node]
 
-
+    print("completed")
     print("_____________________________________________________")
     print("total triangles = ",len(triangles))
     print("_____________________________________________________")
