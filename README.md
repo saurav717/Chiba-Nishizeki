@@ -55,8 +55,7 @@ The code will run twice, first time to check the duration of execution and the s
 
 References: 
 - [Baldaeung Blogpose](https://www.baeldung.com/cs/prove-np-complete)
-- [NP complete problem, partition into triangles](http://profs.sci.univr.it/
-%7Errizzi/classes/Complexity/provette/Mirko/pt_fine.pdf)
+- [NP complete problem, partition into triangles](http://profs.sci.univr.it/%7Errizzi/classes/Complexity/provette/Mirko/pt_fine.pdf)
 
  ### Problem2.2 Time Complexity
  
