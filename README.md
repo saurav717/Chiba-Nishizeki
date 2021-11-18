@@ -187,7 +187,7 @@ In chiba nishizeki, we are first sorting the nodes of the graph based on their d
 
 We iterate through the nodes based on their degrees in descending order, and for each node, we do the below process until all nodes are completed. 
 
-Steps : 
+**Steps** : 
 
 1) Choose a node
 
@@ -198,6 +198,11 @@ Steps :
 4) Remove the mark from the first neighbor.
 
 5) Repeat steps 1-4
+
+The implementation is really slow as we are storing all the triangle nodes in a list, and as the number of triangles increases, the algorithm becomes even slower giving us no result at all in time. 
+
+Improvement: 
+Instead of storing all the triangles in a list, I need to just put a counter and keep adding '1' whenever I find a triangle. Storing them takes a lot of memory and makes the algorithm astronomically slow. This will be implemented in the next update
 
 
 
