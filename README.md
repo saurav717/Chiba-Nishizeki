@@ -52,7 +52,7 @@ The code will run twice, first time to check the duration of execution and the s
 ### About Implemented Algorithm 
 
 #### Problem Analysis
- It is a **Fixed parameter tractable problem** with 'K' as the parameter. K stands for the number of colors with which we are randomly coloring the graph L times randomly in the implemented algorithm. 
+ It is a **Fixed parameter tractable** problem with 'K' as the parameter. K stands for the number of colors with which we are randomly coloring the graph L times randomly in the implemented algorithm. 
  
  L = exp(K) for finding the number of monochromatic triangles in a graph colored with K colors.
 
