@@ -10,21 +10,26 @@ An example format of command you need to run is like the one below
 
 |   Operation Available	|   Methods Applied   	            |    
 |---	|---	                |
-|   triangle_packing	|   Color Coding as a FPT problem 	    |
+|   triangle_packing	|   Color Coding as an FPT problem 	    |
 |   find_triangles	|   Chiba Nishizeki Algorithm	    |
 |   find_triangles	|   Leapfrog Trijoin Algorithm	    |
 
-Then you will come across this text when you select find_triangles
 
-Methods available 
-1) Chiba_nishizeki
-2) leapfrog trijoin
+|   Methods	|   Outputs  	            |    
+|---	|---	                |
+|   triangle_packing	|   packing found/ not found 	    |
+|   Leapfrog Trijoin	|   number of triangles in the graph	    |
+|   Leapfrog Trijoin	|   Flameplots for time analysis of algorithm	    |
+|   Leapfrog Trijoin	|   Memory profile plots to analyse the memory occupied at each time instance 	    |
+|   Chiba Nishizeki	|   number of triangles in the graph	    |
+|   Chiba Nishizeki	|   Flameplots for time analysis of algorithm	    |
+|   Chiba Nishizeki	|   Memory profile plots to analyse the memory occupied at each time instance 	    |
 
-Select the method index : 
 
-Based on the index you select, one of the methods will be executed and you will see the output in the terminal 
+Note: You will be prompted to select a method for find_triangles operation. Based on the index you select, that method will be applied and you will be able to see the result.
 
-A **Flame Graph** will appear on firefox browser and **memory profile** will pop up after a while as a pop up
+
+ A **Flame Graph** will appear on firefox browser and **memory profile** will pop up after a while as a pop up
 
 
 
