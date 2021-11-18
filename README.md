@@ -231,6 +231,11 @@ Since, tree traversal isnt a time taking process and the fact that I implemented
 In an Ideal Case, the leapfrog trijoin algorithm should be faster than Chiba Nishizeki Algorithm. The improvements in the implementation of leapfrog trijoin algorithm would be updated in this repository soon.
 
 
+#### Comaprison of Memory and flame profile plots of Leapfrog trijoin and chiba Nishizeki for all the datasets. 
+
+
+
+
 
 
 
