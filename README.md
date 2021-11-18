@@ -233,6 +233,9 @@ In an Ideal Case, the leapfrog trijoin algorithm should be faster than Chiba Nis
 
 ## Comaprison of Performance plots for different datasets. 
 
+### For grqc dataset
+
+#### Memory plots 
 
 
 
