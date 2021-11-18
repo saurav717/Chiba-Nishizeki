@@ -157,7 +157,7 @@ The time complexity of Chiba nishizeki Algorithm is polynomial over the size of 
 
 ### Time comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm in the implemented algorithms
 
-|   *Time*	                   | Chiba Nishizeki(Secs)  	|  Leapfrog Trijoin (Query Time)  	|   
+|   *Time* (Secs)                 | Chiba Nishizeki(Secs)  	|  Leapfrog Trijoin (Query Time)  	|   
 |---	                       |---               	        |---	                |   
 | **grqc dataset**  	       |         4.5        	    |      5.3            	|   	
 | **github social dataset**    |         65             	|      325           	|   	
@@ -165,10 +165,10 @@ The time complexity of Chiba nishizeki Algorithm is polynomial over the size of 
 
 ### Memory comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
 
-|  *Memory*                 	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	
+|  *Memory* (MiB)                	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	
 |---	                        |---	            |---	                |
-|  **grqc dataset**  	        |                  	|                   	|   	
-|  **github social dataset** 	|   	            |                   	|   	
+|  **grqc dataset**  	        |      120            	|      350             	|   	
+|  **github social dataset** 	|      200	            |      1400(peak)             	|   	
 |  **web berkstan dataset** 	|                	|                    	|   	
 
 
