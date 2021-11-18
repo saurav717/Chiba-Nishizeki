@@ -253,6 +253,23 @@ Leapfrog Trijoin
 
 
 
+### For musae dataset
+
+#### Memory plots 
+Chiba Nishizeki
+![memoryprof](chiba_nishizeki/result/memoryprof/musae_chiba_nishizeki.png)
+
+Leapfrog Trijoin
+![memoryprof](leapfrog_trijoin/result/memoryprof/musae_leapfrog_trijoin.png)
+
+
+#### Flame plots 
+Chiba Nishizeki
+![flameprof](chiba_nishizeki/result/flameprof/musae_chiba_nishizeki.png)
+
+Leapfrog Trijoin
+![flameprof](leapfrog_trijoin/result/flameprof/musae_leapfrog_trijoin.png)
+
 
 
 
