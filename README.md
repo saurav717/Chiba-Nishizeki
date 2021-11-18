@@ -131,7 +131,7 @@ After you execute one of the below commands in terminal, you will be prompted to
 
 T = O(alpha * n)
 
-n - number of nodes
+n - number of nodes; 
 alpha - arboricity of the graph
 
 
@@ -153,17 +153,17 @@ alpha - arboricity of the graph
 
 |   *Time*	                   | Chiba Nishizeki(Secs)  	|  Leapfrog Trijoin (Query Time)  	|   
 |---	                       |---               	        |---	                |   
-| **grqc dataset**  	       |         4.5        	    |      5.3                 	|   	
-| **github social dataset**    |         65             	|        325           	|   	
+| **grqc dataset**  	       |         4.5        	    |      5.3            	|   	
+| **github social dataset**    |         65             	|      325           	|   	
 | **web berkstan dataset**     |                 	        |                   	|   	
 
 ### Memory comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
 
-|  *Memory* 	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	
-|---	|---	|---	|
-|  **grqc dataset**  	|   	|   	|   	
-|  **github social dataset** 	|   	|   	|   	
-|  **web berkstan dataset** 	|   	|   	|   	
+|  *Memory*                 	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	
+|---	                        |---	            |---	                |
+|  **grqc dataset**  	        |                  	|                   	|   	
+|  **github social dataset** 	|   	            |                   	|   	
+|  **web berkstan dataset** 	|                	|                    	|   	
 
 
 
