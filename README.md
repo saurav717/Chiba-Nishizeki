@@ -5,13 +5,21 @@ Clone the repository and follow the below given instructions to run the codes
 
 An example format of command you need to run is like the one below
 
-```python3.9 cs599.py <dataset.txt> <operation>```
+```bash
+python3.9 cs599.py <dataset.txt> <operation>
+```
 
 Other commands you can use 
 
-```python3.9 cs599.py datasets``` - To display the datasets available
+To display the datasets available
+```bash 
+python3.9 cs599.py datasets
+```
 
-``` python3.9 cs599.py help```    - To get help with how to use commands
+To get help with how to use commands
+```bash
+python3.9 cs599.py help
+```
 
 
 |   Operation Available	|   Methods Applied   	            |    
