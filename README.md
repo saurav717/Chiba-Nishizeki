@@ -63,6 +63,8 @@ The code will run twice, first time to check the duration of execution and the s
 
 The code is applied in a DFS fashion over a tree, where each node of the tree contains all the monochromatic nodes of the graph. 
 
+We iterate through all the combinations of colors(i.e nodes) until we find a packing. We repeat this 'L' times recoloring the graph at every iteration, so we can get a consistant estimate on the packing. 
+
 
 
  ### Problem 2.1: Proof that the implemented algorithm is NP-complete [insert link here]
