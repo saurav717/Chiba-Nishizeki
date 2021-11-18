@@ -236,6 +236,8 @@ In an Ideal Case, the leapfrog trijoin algorithm should be faster than Chiba Nis
 ### For grqc dataset
 
 #### Memory plots 
+![memoryprof](chiba_nishizeki/result/memoryprof/grqc_chiba_nishizeki.png)
+
 
 
 
