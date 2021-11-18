@@ -7,9 +7,12 @@ An example format of command you need to run is like the one below
 
 ```python3.9 cs599.py <dataset.txt> <operation>```
 
-We basically do two operations 
-- find_triangles
-- triangle_packing
+
+|   Operation Available	|   Methods Applied   	            |    
+|---	|---	                |
+|   triangle_packing	|   Color Coding as a FPT problem 	    |
+|   find_triangles	|   Chiba Nishizeki Algorithm	    |
+|   find_triangles	|   Leapfrog Trijoin Algorithm	    |
 
 Then you will come across this text when you select find_triangles
 
@@ -47,6 +50,10 @@ The code will run twice, first time to check the duration of execution and the s
  
  L = exp(K) for finding the number of monochromatic triangles in a graph colored with K colors.
 
+#### Programming Approach 
+
+The code is applied in a DFS fashion over a tree, where each node of the tree contains all the monochromatic nodes of the graph. 
+
 
 
  ### Problem 2.1: Proof that the implemented algorithm is NP-complete [insert link here]
@@ -54,14 +61,14 @@ The code will run twice, first time to check the duration of execution and the s
  We first shown that our problem is first an NP. Then we considered another NP problem 3DP, and shown that it converges to our problem. This way our problem is now NP complete. 
 
 References: 
-- [Baldaeung Blogpose](https://www.baeldung.com/cs/prove-np-complete)
+- [Baldaeung Blogpost](https://www.baeldung.com/cs/prove-np-complete)
 - [NP complete problem, partition into triangles](http://profs.sci.univr.it/%7Errizzi/classes/Complexity/provette/Mirko/pt_fine.pdf)
 
- ### Problem2.2 Time Complexity
+ ### Problem 2.2: Time Complexity and analysis of the algorithm
  
  Number of total combinations of colors we search for finding a triangle in each color = 2^(k)
 
- at each one colored nodes, we use chiba nishizeki algorithm to find the triangles. Worst case time complexity to find the triangles = O(n^3)
+ at each one colored nodes, we use chiba nishizeki algorithm to find the triangles. Worst case time complexity to find the triangles = O(œ)
 
  Total time complexity = O(2^k n^3) ≈ O(2^k n^O(1))
 
