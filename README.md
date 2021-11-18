@@ -126,6 +126,15 @@ After you execute one of the below commands in terminal, you will be prompted to
 
 1) **Chiba Nishizeki** 
     - For more information about this algorithm, please refer to this paper : [Link](http://www.ecei.tohoku.ac.jp/alg/nishizeki/sub/j/DVD/PDF_J/J053.pdf)
+
+#### Time complexity for Chiba Nishizeki 
+
+T = O(alpha * n)
+
+n - number of nodes
+alpha - arboricity of the graph
+
+
 2) **Leapfrog trijoin** 
     - For more information about this algorithm, please refer to this paper : [Link](https://arxiv.org/abs/1210.0481) 
 
@@ -139,13 +148,13 @@ After you execute one of the below commands in terminal, you will be prompted to
 ```python3.9 cs599.py web-BerkStan.txt find_triangles```
 
 
-### Time comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
+### Time comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm in the implemented algorithms
 
-|   *Time*	| Chiba Nishizeki  	|  Leapfrog Trijoin  	|   
-|---	|---	|---	|
-| **grqc dataset**  	|   	|   	|   	
-| **github social dataset**  	|   	|   	|   	
-| **web berkstan dataset**  	|   	|   	|   	
+|   *Time*	                   | Chiba Nishizeki  	|  Leapfrog Trijoin  	|   
+|---	                       |---               	|---	                |   
+| **grqc dataset**  	       |                 	|                   	|   	
+| **github social dataset**    |                  	|                   	|   	
+| **web berkstan dataset**     |                 	|                   	|   	
 
 ### Memory comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
 
