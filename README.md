@@ -9,13 +9,9 @@ An example format of command you need to run is like the one below
 
 Other commands you can use 
 
-- To display the datasets available
+```python3.9 cs599.py datasets``` - To display the datasets available
 
-```python3.9 cs599.py datasets``` 
-
-- To get help with how to use commands
-
-``` python3.9 cs599.py help```    
+``` python3.9 cs599.py help```    - To get help with how to use commands
 
 
 |   Operation Available	|   Methods Applied   	            |    
@@ -57,10 +53,14 @@ python3.9 cs599.py grqc.txt triangle_packing
 ```
 
 - For github social
-``` python3.9 cs599.py musae_git_edges.csv triangle_packing```
+```base
+python3.9 cs599.py musae_git_edges.csv triangle_packing
+```
 
 - For web berkstan dataset
-```python3.9 cs599.py web-BerkStan.txt triangle_packing```
+```bash 
+python3.9 cs599.py web-BerkStan.txt triangle_packing
+```
 
 ### About Implemented Algorithm 
 
@@ -69,6 +69,11 @@ python3.9 cs599.py grqc.txt triangle_packing
 
  L = exp(K) for finding the number of monochromatic triangles in a graph colored with K colors.
 
+[The probability of finding a colorful triangle](k-pack_probabilirt_triangle) is equal to exp(-K) to a given set of coloring of nodes.
+
+So we randomly color the nodes of the graph exp(K) times hoping to find a colorful triangle when colored with 3k colors
+
+In the implementation, I colored the graph with 'k' colors rather than '3k' and I am trying to find all the monochromatic triangles that are independent of each other 
 
  All Fixed parameter tractable problems are NP-Complete 
 
