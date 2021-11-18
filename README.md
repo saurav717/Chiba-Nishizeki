@@ -250,7 +250,9 @@ Chiba Nishizeki
 Leapfrog Trijoin
 ![flameprof](leapfrog_trijoin/result/flameprof/grqc_leapfrog_trijoin.png)
 
+### Observations
 
+[insert text here]
 
 
 ### For musae dataset
