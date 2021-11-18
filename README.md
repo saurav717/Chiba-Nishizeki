@@ -7,6 +7,11 @@ An example format of command you need to run is like the one below
 
 ```python3.9 cs599.py <dataset.txt> <operation>```
 
+Other commands you can use 
+
+```python3.9 cs599.py datasets```
+``` python3.9 cs599.py help``` 
+
 
 |   Operation Available	|   Methods Applied   	            |    
 |---	|---	                |
@@ -169,7 +174,16 @@ The time complexity of Chiba nishizeki Algorithm is polynomial over the size of 
 |---	                        |---	            |---	                |
 |  **grqc dataset**  	        |      120            	|      350             	|   	
 |  **github social dataset** 	|      200	            |      1400(peak)             	|   	
-|  **web berkstan dataset** 	|                	|                    	|   	
+|  **web berkstan dataset** 	|                	|                    	|  
+
+
+### Coding procedure for both algorithms and what went wrong in optimization
+
+Below we will be discussing the approach of implementing both the algorithms and see why leapfrog implementation is slow and how it can be optimized 
+
+#### Chiba Nishizeki 
+
+
 
 
 
