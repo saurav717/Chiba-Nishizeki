@@ -26,7 +26,7 @@ An example format of command you need to run is like the one below
 |   Chiba Nishizeki	|   Memory profile plots to analyse the memory occupied at each time instance 	    |
 
 
-Note: You will be prompted to select a method for find_triangles operation. Based on the index you select, that method will be applied and you will be able to see the result.
+**Note**: You will be prompted to select a method for find_triangles operation. Based on the index you select, that method will be applied and you will be able to see the result.
 
 
  A **Flame Graph** will appear on firefox browser and **memory profile** will pop up after a while as a pop up
@@ -85,13 +85,22 @@ References:
 #### Algorithm output with k = 5, 10, 15, 20
 
 
-|   K	|   output	            | Runtime  	| Memory usage  	|   
-|---	|---	                |---	    |---	            |
-|   5	|   Packing found	    |   	    |                	|
-|   10	|   Packing found	    |        	|                	|
-|   15	|   Packing found	    |        	|                	|
-|   20	|   Packing found	    |       	|                	|
+|   K	|   output	            | Runtime (secs)  	| Memory usage (MiB)  	|   
+|---	|---	                |---	        |---	            |
+|   5	|   Packing found	    |   1.504	    |     79           	|
+|   10	|   Packing found	    |   3.271    	|     80         	|
+|   15	|   Packing found	    |   5.305     	|     81           	|
+|   20	|   Packing found	    |   7.255	    |     82           	|
 
+
+#### Observations : 
+
+Time complexity of the triangle packing problem will increase exponentially over 'k' and polynomially over 'd' 
+- K - Number of colors (Parameter); n - size of data  
+
+as can be seen from the plot below, that the time taken for execution is varying exponentially to find the triangle packing over a fixed data size 'n' as we vary the value of the parameter 'K'
+
+![time plot](Isolated.png)
 
 ## Problem 3: Implementation of Triangle finding algorithms
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
