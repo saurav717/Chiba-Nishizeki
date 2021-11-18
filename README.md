@@ -111,8 +111,7 @@ We can correlate the below flameprof and this memory profile to check which part
 ![Flameplot](triangle_packing/result/flameprof/triangle_packing.png)
 
 #### Observations on time complexity in implementation
-We can see from the above plots that most of the time is taken in finding the triangles in the graph by chiba nishizeki algorithm. 
-- More text to be added
+We can see from the above plots that most of the time is taken in finding the triangles in the graph by chiba nishizeki algorithm. There we are storing(marking) the explored nodes in a list which is a time taking and memory consuming process. Improvements can be made by hashing them via a dictionary 
 
 
 ![time plot](triangle_packing/time_plot.png)
