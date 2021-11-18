@@ -45,7 +45,9 @@ The code will run twice, first time to check the duration of execution and the s
 
  It is a **Fixed parameter tractable problem** with 'K' as the parameter. K stands for the number of colors with which we are randomly coloring the graph L times randomly in the implemented algorithm. 
  
- L = exp(K) for finding the number of monochromatic triangles in a graph colored with K colors. 
+ L = exp(K) for finding the number of monochromatic triangles in a graph colored with K colors.
+
+
 
  ### Problem 2.1: Proof that the implemented algorithm is NP-complete [insert link here]
 
@@ -95,7 +97,7 @@ After you execute one of the below commands in terminal, you will be prompted to
 
 ### Time comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
 
-|   	| Chiba Nishizeki  	|  Leapfrog Trijoin  	|   
+|   *Time*	| Chiba Nishizeki  	|  Leapfrog Trijoin  	|   
 |---	|---	|---	|
 | **grqc dataset**  	|   	|   	|   	
 | **github social dataset**  	|   	|   	|   	
@@ -103,7 +105,7 @@ After you execute one of the below commands in terminal, you will be prompted to
 
 ### Memory comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
 
-|   	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	
+|  *Memory* 	|   Chiba Nishizeki	|  Leapfrog Trijoin  	|   	
 |---	|---	|---	|
 |  **grqc dataset**  	|   	|   	|   	
 |  **github social dataset** 	|   	|   	|   	
