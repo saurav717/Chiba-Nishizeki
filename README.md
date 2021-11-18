@@ -100,6 +100,8 @@ Time complexity of the triangle packing problem will increase exponentially over
 
 as can be seen from the plot below, that the time taken for execution is varying exponentially to find the triangle packing over a fixed data size 'n' as we vary the value of the parameter 'K'
 
+![Flameplot](triangle_packing/result/flameprof/triangle_packing.png)
+
 ![time plot](triangle_packing/time_plot.png)
 
 ## Problem 3: Implementation of Triangle finding algorithms
