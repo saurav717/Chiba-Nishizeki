@@ -144,7 +144,7 @@ After you execute one of the below commands in terminal, you will be prompted to
 T = O(alpha * n)
 
 n - number of nodes; 
-alpha - arboricity of the graph
+[alpha](https://en.wikipedia.org/wiki/Arboricity) - arboricity of the graph
 
 The time complexity of Chiba nishizeki Algorithm is polynomial over the size of the graph(number of nodes)
 
@@ -183,6 +183,24 @@ The time complexity of Chiba nishizeki Algorithm is polynomial over the size of 
 Below we will be discussing the approach of implementing both the algorithms and see why leapfrog implementation is slow and how it can be optimized 
 
 #### Chiba Nishizeki 
+In chiba nishizeki, we are first sorting the nodes of the graph based on their degrees and then applying the iteration algorithm to find the triangles. 
+
+We iterate through the nodes based on their degrees in descending order, and for each node, we do the below process until all nodes are completed. 
+
+Steps : 
+
+1) Choose a node
+
+2) look at its neighbors, and mark them (we are storing them in a list in the code as a sign of being marked)
+
+3) look at the neighbors or neighbors. If those neighbors are in the list of marked nodes, then we found a triangle
+
+4) Remove the mark from the first neighbor.
+
+5) Repeat steps 1-4
+
+
+
 
 
 
