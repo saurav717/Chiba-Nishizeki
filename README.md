@@ -1,6 +1,6 @@
 
-## **CS599 Graph Analytics** by  **Dr. Charalampos Tsourkakis** at Boston University 
-
+## **CS599 Graph Analytics** by  **Dr. Charalampos Tsourkakis** 
+#### At Boston university 
 Clone the repository and follow the below given instructions to run the codes
 
 
