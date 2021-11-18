@@ -100,7 +100,13 @@ Time complexity of the triangle packing problem will increase exponentially over
 
 as can be seen from the plot below, that the time taken for execution is varying exponentially to find the triangle packing over a fixed data size 'n' as we vary the value of the parameter 'K'
 
+#### Flameprof for triangle packing 
+
 ![Flameplot](triangle_packing/result/flameprof/triangle_packing.png)
+
+#### Observations on implementation
+We can see from the above plots that most of the time is taken in finding the triangles in the graph by chiba nishizeki algorithm. 
+- More text to be added
 
 ![time plot](triangle_packing/time_plot.png)
 
