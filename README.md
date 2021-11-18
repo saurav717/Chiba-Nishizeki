@@ -204,6 +204,31 @@ The implementation is really slow as we are storing all the triangle nodes in a 
 **Improvement** : 
 Instead of storing all the triangles in a list, I need to just put a counter and keep adding '1' whenever I find a triangle. Storing them takes a lot of memory and makes the algorithm astronomically slow. This will be implemented in the next update
 
+#### Leapfrog Trijoin 
+In leapfrog Trijoin Algorithm, we have an edgelist as an input in the scope of the assignment. But the implemented algorithm here is designed to build and apply leapfrog trijoin algorithm for a tree of any depth.
+
+I implemented this algorithm in four steps. 
+
+1) Given an edgelist, the script makes a tree of multiple nodes. Each node consists of information regarding tis children, parent and peer nodes(nodes at same level)
+    - Here Node is another custom defined datatype defined in node.py
+    
+2) The Tree.py script uses the features of the datatype in node.py and constructs a tree by connecting multiple nodes of the type node. 
+    - This part is implemented in a recursive way, and so it takes lot of time as the size of the graph increases making it incredibly slower than it should be. 
+
+3) After constructing the tree, we open the tree which gives us the first node in the child level of the current node, and using that node, you will be able to traverse anywhere in the tree. 
+
+4) lptj.py implements the leapfrog trijoin algorithm, with multiple leapfrog joins that are implemented in 'leapfrog_join.py' 
+
+5) leapfrog_join.py is incredibly fast and can give you intersection of two lists of even really large size, in a matter of few seconds. 
+
+All these point the issue of the implementation being slow to either the way we defined the tree or the trijoin algorithm. 
+
+Since, tree traversal isnt a time taking process and the fact that I implemented trijoin algorithm in recursive way traversing down the tree, point to the recursive method of implementation being at fault for making the whole algorithm show.
+
+
+#### Ideal Case
+
+In an Ideal Case, the leapfrog trijoin algorithm should be faster than Chiba Nishizeki Algorithm. The improvements in the implementation of leapfrog trijoin algorithm would be updated in this repository soon.
 
 
 
