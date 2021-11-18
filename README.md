@@ -5,7 +5,9 @@ Clone the repository and follow the below given instructions to run the codes
 
 An example format of command you need to run is like the one below
 
-```python3.9 cs599.py <dataset.txt> <operation>```
+```bash
+python3.9 cs599.py <dataset.txt> <operation>
+```
 
 Other commands you can use 
 
