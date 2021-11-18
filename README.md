@@ -124,7 +124,7 @@ We can see from the above plots that most of the time is taken in finding the tr
 ## Problem 3: Implementation of Triangle finding algorithms
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
 
-1) **Chiba Nishizeki** 
+**Chiba Nishizeki** 
     - For more information about this algorithm, please refer to this paper : [Link](http://www.ecei.tohoku.ac.jp/alg/nishizeki/sub/j/DVD/PDF_J/J053.pdf)
 
 #### Time complexity for Chiba Nishizeki 
