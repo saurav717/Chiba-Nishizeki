@@ -104,11 +104,20 @@ as can be seen from the plot below, that the time taken for execution is varying
 
 ![Flameplot](triangle_packing/result/flameprof/triangle_packing.png)
 
-#### Observations on implementation
+#### Observations on time complexity in implementation
 We can see from the above plots that most of the time is taken in finding the triangles in the graph by chiba nishizeki algorithm. 
 - More text to be added
 
+#### Memory profile showing how much memory is the algorithm occupying at each point of time
+
+We can correlate the above flameprof and this memory profile to check which part of the code is occupying more memory as the time scale is same for both plots
+
 ![time plot](triangle_packing/time_plot.png)
+
+#### Observations on memory complexity in implementation
+- We started using large chunk of memory ever since the chiba-nishizeki algorithm has started. In the implementation of chiba-nishizeki algorithm, we are storing all the explored nodes in a list, which in python is a time consuming process. It occupies more memory and takes time. 
+
+- This can be mitigated by hashing the explored nodes in a dictionary which will be there in the later update
 
 ## Problem 3: Implementation of Triangle finding algorithms
 After you execute one of the below commands in terminal, you will be prompted to select one of the two methods specified 
