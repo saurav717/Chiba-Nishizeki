@@ -11,9 +11,9 @@ import random
 
 # print("total nodes = 5242")
 # print("total edges = 28980")
-print()
+# print()
 # print("edge list")
-print()
+# print()
 # print(graph_data.head())
 
 
