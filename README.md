@@ -51,7 +51,12 @@ The code will run twice, first time to check the duration of execution and the s
 
  ### Problem 2.1: Proof that the implemented algorithm is NP-complete [insert link here]
 
-insert text here
+ We first shown that our problem is first an NP. Then we considered another NP problem 3DP, and shown that it converges to our problem. This way our problem is now NP complete. 
+
+References: 
+- [Baldaeung Blogpose](https://www.baeldung.com/cs/prove-np-complete)
+- [NP complete problem, partition into triangles](http://profs.sci.univr.it/
+%7Errizzi/classes/Complexity/provette/Mirko/pt_fine.pdf)
 
  ### Problem2.2 Time Complexity
  
