@@ -5,15 +5,17 @@ Clone the repository and follow the below given instructions to run the codes
 
 An example format of command you need to run is like the one below
 
-```bash
-python3.9 cs599.py <dataset.txt> <operation>
-```
+```python3.9 cs599.py <dataset.txt> <operation>```
 
 Other commands you can use 
 
-```python3.9 cs599.py datasets``` - To display the datasets available
+- To display the datasets available
 
-``` python3.9 cs599.py help```    - To get help with how to use commands
+```python3.9 cs599.py datasets``` 
+
+- To get help with how to use commands
+
+``` python3.9 cs599.py help```    
 
 
 |   Operation Available	|   Methods Applied   	            |    
@@ -49,7 +51,10 @@ The code will run twice, first time to check the duration of execution and the s
 
 ### Try Executing the following codes mentioned
 - For grqc dataset
-``` python3.9 cs599.py grqc.txt triangle_packing ```
+
+```bash
+python3.9 cs599.py grqc.txt triangle_packing 
+```
 
 - For github social
 ``` python3.9 cs599.py musae_git_edges.csv triangle_packing```
@@ -75,7 +80,7 @@ We iterate through all the combinations of colors(i.e nodes) until we find a pac
 
 
 
- ### Problem 2.1: Proof that the implemented algorithm is NP-complete [insert link here]
+ ### Problem 2.1: Proof that the implemented algorithm is [NP-complete](NP-Complete_proof.pdf) 
 
  We first shown that our problem is first an NP. Then we considered another NP problem 3DP, and shown that it converges to our problem. This way our problem is now NP complete. 
 
