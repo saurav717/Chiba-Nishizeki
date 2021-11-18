@@ -10,6 +10,7 @@ An example format of command you need to run is like the one below
 Other commands you can use 
 
 ```python3.9 cs599.py datasets```
+
 ``` python3.9 cs599.py help``` 
 
 
