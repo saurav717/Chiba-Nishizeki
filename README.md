@@ -9,9 +9,9 @@ An example format of command you need to run is like the one below
 
 Other commands you can use 
 
-```python3.9 cs599.py datasets```
+```python3.9 cs599.py datasets``` - To display the datasets available
 
-``` python3.9 cs599.py help``` 
+``` python3.9 cs599.py help```    - To get help with how to use commands
 
 
 |   Operation Available	|   Methods Applied   	            |    
