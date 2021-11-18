@@ -245,10 +245,10 @@ Leapfrog Trijoin
 
 #### Flame plots 
 Chiba Nishizeki
-![memoryprof](chiba_nishizeki/result/flameprof/grqc_chiba_nishizeki.png)
+![flameprof](chiba_nishizeki/result/flameprof/grqc_chiba_nishizeki.png)
 
 Leapfrog Trijoin
-![memoryprof](leapfrog_trijoin/result/flameprof/grqc_leapfrog_trijoin.png)
+![flameprof](leapfrog_trijoin/result/flameprof/grqc_leapfrog_trijoin.png)
 
 
 
