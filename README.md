@@ -100,6 +100,12 @@ Time complexity of the triangle packing problem will increase exponentially over
 
 as can be seen from the plot below, that the time taken for execution is varying exponentially to find the triangle packing over a fixed data size 'n' as we vary the value of the parameter 'K'
 
+#### Memory profile showing how much memory is the algorithm occupying at each point of time
+
+![memoryprof](triangle_packing/result/memoryprof/grqc_triangle_packing.png)
+
+We can correlate the below flameprof and this memory profile to check which part of the code is occupying more memory as the time scale is same for both plots
+
 #### Flameprof for triangle packing 
 
 ![Flameplot](triangle_packing/result/flameprof/triangle_packing.png)
@@ -108,11 +114,6 @@ as can be seen from the plot below, that the time taken for execution is varying
 We can see from the above plots that most of the time is taken in finding the triangles in the graph by chiba nishizeki algorithm. 
 - More text to be added
 
-![memoryprof](triangle_packing/result/memoryprof/grqc_triangle_packing.png)
-
-#### Memory profile showing how much memory is the algorithm occupying at each point of time
-
-We can correlate the above flameprof and this memory profile to check which part of the code is occupying more memory as the time scale is same for both plots
 
 ![time plot](triangle_packing/time_plot.png)
 
