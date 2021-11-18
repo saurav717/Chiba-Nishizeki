@@ -135,7 +135,8 @@ n - number of nodes
 alpha - arboricity of the graph
 
 
-2) **Leapfrog trijoin** 
+
+**Leapfrog trijoin** 
     - For more information about this algorithm, please refer to this paper : [Link](https://arxiv.org/abs/1210.0481) 
 
 - For grqc dataset
