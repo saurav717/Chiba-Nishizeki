@@ -23,6 +23,7 @@ columns = list(graph_data.columns)
 graph_data = graph_data.rename(columns = {columns[0] : "FromNodeId", columns[1]: "ToNodeId"})
 
 K = [1,5,10,15,20]
+times = []
 
 for k in K:
     start_time = time.time()
@@ -34,6 +35,12 @@ for k in K:
 
     packing = tp.triangle_packing(data)
     print("time for execution = ", (time.time() - start_time))
+    times.append(time.time() - start_time)
     # print("CPU time = ", myProcess.cpu_times())
-    print("memory used = ", myProcess.memory_full_info()[2], "\n\n")
+    print("memory used = ", myProcess.memory_full_info()[2], " Mib \n\n")
+
+plt.plot(times)
+plt.xlabel("K")
+plt.ylabel("time")
+# plt.show()
 
