@@ -134,7 +134,7 @@ T = O(alpha * n)
 n - number of nodes; 
 alpha - arboricity of the graph
 
-
+The time complexity of Chiba nishizeki Algorithm is polynomial over the size of the graph(number of nodes)
 
 **Leapfrog trijoin** 
     - For more information about this algorithm, please refer to this paper : [Link](https://arxiv.org/abs/1210.0481) 
