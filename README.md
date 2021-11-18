@@ -151,11 +151,11 @@ alpha - arboricity of the graph
 
 ### Time comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm in the implemented algorithms
 
-|   *Time*	                   | Chiba Nishizeki  	|  Leapfrog Trijoin  	|   
-|---	                       |---               	|---	                |   
-| **grqc dataset**  	       |                 	|                   	|   	
-| **github social dataset**    |                  	|                   	|   	
-| **web berkstan dataset**     |                 	|                   	|   	
+|   *Time*	                   | Chiba Nishizeki(Secs)  	|  Leapfrog Trijoin (Query Time)  	|   
+|---	                       |---               	        |---	                |   
+| **grqc dataset**  	       |         4.5        	    |      5.3                 	|   	
+| **github social dataset**    |         65             	|        325           	|   	
+| **web berkstan dataset**     |                 	        |                   	|   	
 
 ### Memory comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm
 
