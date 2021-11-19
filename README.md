@@ -303,8 +303,6 @@ Leapfrog Trijoin
 ![flameprof](musae_leapfrog_trijoin/result/flameprof/musae_leapfrog_trijoin.png)
 
 
-
-
-
+**Note**: I was unable to plot the flameplots and memory profiles for web-BerkStan.txt dataset, as it was taking too long to even run for the current implementation. 
 
 
