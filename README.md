@@ -218,13 +218,19 @@ The time complexity of Chiba nishizeki Algorithm is polynomial over the size of 
     - For more information about this algorithm, please refer to this paper : [Link](https://arxiv.org/abs/1210.0481) 
 
 - For grqc dataset
-``` python3.9 cs599.py grqc.txt find_triangles ```
+```bash
+ python3.9 cs599.py grqc.txt find_triangles
+```
 
 - For github social
-``` python3.9 cs599.py musae_git_edges.csv find_triangles```
+```bash
+python3.9 cs599.py musae_git_edges.csv find_triangles
+```
 
 - For web berkstan dataset
-```python3.9 cs599.py web-BerkStan.txt find_triangles```
+```bash
+python3.9 cs599.py web-BerkStan.txt find_triangles
+```
 
 
 ### Time comparison for different datasets with Chiba Nishizeki and leapfrog trijoin algorithm in the implemented algorithms
