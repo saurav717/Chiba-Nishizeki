@@ -18,7 +18,6 @@ if(args[0][-3:] == "txt"):
     graph_data = pd.read_csv(sys.path[0] + "/../datasets/"+args[0], delimiter = "\t")
 columns = list(graph_data.columns)
 
-# print("columns = ", columns)
 
 graph_data = graph_data.rename(columns = {columns[0] : "FromNodeId", columns[1]: "ToNodeId"})
 
