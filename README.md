@@ -103,8 +103,9 @@ We iterate through all the combinations of colors(i.e nodes) until we find a pac
 
 
 
- ### Problem 2.1: Proof that the implemented algorithm is [NP-complete](NP-Complete_proof.pdf) 
-
+ ### Problem 2.1: Proof that the implemented algorithm is    NP-complete
+ [Approach 1](NP-Complete_proof.pdf),   [Approach 2](Graph_representations-analysis-complexity.pdf)
+ 
  We first shown that our problem is first an NP. Then we considered another NP problem 3DP, and shown that it converges to our problem. This way our problem is now NP complete. 
 
 References: 
