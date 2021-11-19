@@ -1,5 +1,8 @@
 
 ## CS599 Graph Analytics by  **Dr. Charalampos Tsourkakis** At Boston university 
+
+This is for a course assignment. Feel free to use the implemented algorithms if it helps. 
+
 Clone the repository and follow the below given instructions to run the codes
 
 
