@@ -111,10 +111,11 @@ python3.9 cs599.py musae_git_edges.csv triangle_packing
 ```
 
 - For web berkstan dataset
-**Note** [web BerkStan dataset](http://snap.stanford.edu/data/web-BerkStan.html) is not in this git repository because of size limit. Please download it and insert the edgelist in the datasets folder
 ```bash 
 python3.9 cs599.py web-BerkStan.txt triangle_packing
 ```
+**Note** [web BerkStan dataset](http://snap.stanford.edu/data/web-BerkStan.html) is not in this git repository because of size limit. Please download it and insert the edgelist in the datasets folder
+
 
 ### About Implemented Algorithm 
 
