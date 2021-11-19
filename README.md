@@ -283,8 +283,13 @@ Leapfrog Trijoin
 
 ### Observations
 
-[insert text here]
+Ideally, Chiba Nishizeki would be slower than leapfrog trijoin algorithm. But because of the issue in the method of implementation, this algorithm is slower than expected. 
 
+From the flame plots, we can see that makeTree function is taking most of the time for execution. Using preexisting BTree libraries would almost completely cut that time off. Also, the trijoin function is taking almost the same amount of time as that of makeTree, indicating that something that is being used by both of them is causing this issue. That would be the custom defined datatype of "node.py" as it has a lot of redundant information that may not be required in the whole algorithm.
+
+- Recursion has a very large amount of overhead as all the function call and data inside it must be stored in a stack to return back the caller function. Instead, if we use iterative approach, we wouldn't have to use such high memory and eventually the execution would become faster. 
+
+**Note** : In the below flame plots and memory plots, if implementation were right, leapfrog trijoin would have been way faster. The memory consumed would also have been comparative with chiba nishizeki, as we would have had to maintain three trees for traversing to find triangles. 
 
 ### For musae dataset
 
