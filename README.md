@@ -53,6 +53,15 @@ The code will run twice, first time to check the duration of execution and the s
 
 ## To find triangle packing for a data 
 
+#### Datasets Available
+
+|   Name	        |   Nodes	            | edges  	    | Triangles     	|   
+|---	            |---	                |---	        |---	            |
+|   grqc	        |   5242	    |   14496	    |     48260           	|
+|   github social	|   37700	    |   289003    	|     218056         	|
+|   web berkstan	|   685230	    |   7600595     	|     64690980           	|
+
+
 ### Try Executing the following codes mentioned
 - For grqc dataset
 
