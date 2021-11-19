@@ -50,8 +50,9 @@ python3.9 cs599.py help
 
 The code will run twice, first time to check the duration of execution and the second time to check how much memory the code is occupying during the execution of the code 
 
+## 1. [Graph representations, time complexities, analysis and observations]()
 
-## To find triangle packing for a data 
+## 2. To find triangle packing for a data 
 
 #### Datasets Available
 
@@ -209,7 +210,7 @@ The time complexity of Chiba nishizeki Algorithm is polynomial over the size of 
 
 ### Coding procedure for both algorithms and what went wrong in optimization
 
-Below we will be discussing the approach of implementing both the algorithms and see why leapfrog implementation is slow and how it can be optimized 
+Below we will be discussing the approach of implementing both the algorithms and see why my leapfrog implementation is slow and how it can be optimized 
 
 #### Chiba Nishizeki 
 In chiba nishizeki, we are first sorting the nodes of the graph based on their degrees and then applying the iteration algorithm to find the triangles. 
@@ -291,7 +292,7 @@ Chiba Nishizeki
 ![memoryprof](chiba_nishizeki/result/memoryprof/musae_chiba_nishizeki.png)
 
 Leapfrog Trijoin
-![memoryprof](leapfrog_trijoin/result/memoryprof/musae_leapfrog_trijoin.png)
+![memoryprof](leapfrog_trijoin/result/memoryprof/lptj_musae.png)
 
 
 #### Flame plots 
@@ -299,7 +300,7 @@ Chiba Nishizeki
 ![flameprof](chiba_nishizeki/result/flameprof/musae_chiba_nishizeki.png)
 
 Leapfrog Trijoin
-![flameprof](leapfrog_trijoin/result/flameprof/musae_leapfrog_trijoin.png)
+![flameprof](musae_leapfrog_trijoin/result/flameprof/musae_leapfrog_trijoin.png)
 
 
 
