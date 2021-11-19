@@ -50,7 +50,7 @@ python3.9 cs599.py help
 
 The code will run twice, first time to check the duration of execution and the second time to check how much memory the code is occupying during the execution of the code 
 
-## 1. [Graph representations, time complexities, analysis and observations]()
+## 1. [Graph representations, time complexities, analysis and observations](Graph_representations-analysis-complexity.pdf)
 
 ## 2. To find triangle packing for a data 
 
