@@ -21,7 +21,7 @@ class triangle_packing:
 
     def __init__(self, data):
         self.edge_list = data["edge_list"]
-        self.nodeIDs = np.unique(list(self.edge_list["FromNodeId"]))
+        self.nodeIDs = np.unique(np.concatenate([self.edge_list["FromNodeId"].to_numpy(), self.edge_list["ToNodeId"].to_numpy()]))
 
         self.num_colors = data["K"]
         self.colors = list(range(self.num_colors))
@@ -53,41 +53,34 @@ class triangle_packing:
         self.node_colors = node_colors 
 
 
-    def chiba_nishizeki(self,data):
-        graph_data = data["edgelist"] # columns = [FromNodeId, ToNodeId]
-        graph_data = graph_data[graph_data["FromNodeId"]!=graph_data["ToNodeId"]]
-        edge_list = graph_data
-        nodes = np.unique(graph_data["FromNodeId"])
-        node_degree = dict()
-        for x in nodes:
-            node_degree[x] = graph_data[graph_data["FromNodeId"] == x].shape[0]
-        nodes = self.degree_sorted_nodes(node_degree)
-        nodeIDs = list(nodes.keys())
-        triangles = []
-        for i in range(len(nodeIDs)-2):
-            node = nodeIDs[i]
-            node_neighbours = np.unique(list(edge_list[edge_list["FromNodeId"] == node]["ToNodeId"]))
-            marked_nodes = list(node_neighbours)
-            for neighbour in node_neighbours:
-                neighbour_neighbours = np.unique(list(edge_list[edge_list["FromNodeId"]==neighbour]["ToNodeId"]))
-                for third_neighbour in neighbour_neighbours:
-                    if(third_neighbour in marked_nodes):
-                        triangles.append([node,neighbour,third_neighbour])
-                        return "yes"
-                marked_nodes.remove(neighbour)
-            edge_list = edge_list[edge_list["FromNodeId"]!=node]
-            edge_list = edge_list[edge_list["ToNodeId"]!=node]
+    def build_adjacency(self, edge_list): # undirected adjacency sets; each edge counted once regardless of direction
+        adjacency = dict()
+        for u, v in zip(edge_list["FromNodeId"].to_numpy(), edge_list["ToNodeId"].to_numpy()):
+            if u == v:
+                continue
+            adjacency.setdefault(u, set()).add(v)
+            adjacency.setdefault(v, set()).add(u)
+        return adjacency
 
-        # if(len(triangles) > 0):
-        #     print("triangles - ", len(triangles))
-        #     return "yes"
-        # else:
+    def chiba_nishizeki(self,data): # returns "yes" as soon as one triangle is found
+        adjacency = self.build_adjacency(data["edgelist"]) # columns = [FromNodeId, ToNodeId]
+        nodeIDs = sorted(adjacency, key = lambda x: len(adjacency[x]), reverse = True)
+        for node in nodeIDs:
+            marked_nodes = set(adjacency[node])
+            for neighbour in adjacency[node]:
+                if not adjacency[neighbour].isdisjoint(marked_nodes):
+                    return "yes"
+                marked_nodes.discard(neighbour)
+            for neighbour in adjacency[node]:
+                adjacency[neighbour].discard(node)
+            adjacency[node] = set()
         return "no"
 
 
     def find_triangle(self, color):
         one_colored_nodes = [k for k,v in self.node_colors.items() if v == color]
-        one_colored_edgelist = self.edge_list.loc[self.edge_list['FromNodeId'].isin(one_colored_nodes)]
+        # subgraph induced on the one-colored nodes: both endpoints must have this color
+        one_colored_edgelist = self.edge_list.loc[self.edge_list['FromNodeId'].isin(one_colored_nodes) & self.edge_list['ToNodeId'].isin(one_colored_nodes)]
         # one_colored_edgelist = self.edge_list[self.edge_list["FromNodeId"]==one_colored_nodes]
         data = {
             "edgelist" : one_colored_edgelist
